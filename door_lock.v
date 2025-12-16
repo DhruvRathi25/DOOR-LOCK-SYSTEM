@@ -29,7 +29,7 @@ module door_lock(unlock, error,  reset, in, clk);
             entered_pass<= 4'b0000;
             unlock<=0;
             error<=0;
-            count<=3'b00;
+            count<=3'b000;
         end
         INPUT: begin
             if(count==3'b100) state<=CHECK;
